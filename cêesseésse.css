@@ -1,0 +1,218 @@
+body {
+  font-family: Hepta Slab, sans-serif;
+  font-weight: 500;
+  background: #36221E;
+  color: #FC5B39;
+}
+* {
+  box-sizing: border-box;
+}
+
+.fundo-branco {
+	background: #D0FF14;
+	color: #FE4164;
+}
+
+
+::-webkit-scrollbar {
+  width: 1px;
+  height: 1px;
+}
+
+::-webkit-scrollbar-button {
+  width: 1px;
+  height: 1px;
+}
+
+
+
+.as_coisas {
+  overflow: hidden;
+  height: 750vh;
+}
+
+
+
+
+.vai_pro_lado {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100vh;
+  transform: rotate(-90deg) translate3d(0,-100vh,0);
+  transform-origin: right top;
+  overflow-y: auto;
+  overflow-x: hidden;
+  padding: 0;
+  height: 100vw;
+  perspective: 1px;
+	transform-style: preserve-3d;
+  padding-bottom: 10rem;
+}
+
+
+
+.gira {
+  transform: rotate(90deg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 40vh;
+  transform-origin: 50% 50%;
+  transform: rotate(90deg) translateZ(.1px) scale(0.9) translateX(0px) translateY(-3vh);
+  transition: 1s;
+}
+
+.gira:hover {
+ min-height: 65vh;
+}
+
+
+
+.devagar {
+  transform: rotate(90deg) translateZ(-.2px) scale(1.1) translateX(0%) translateY(-10vh);
+}
+.devagarinho {
+  transform: rotate(90deg) translateZ(-.25px) scale(1.05) translateX(0%) translateY(8vh);
+}
+.ligero {
+  transform: rotate(90deg) translateZ(.15px) scale(0.8) translateX(0%) translateY(14vh) ;
+}
+.ligeirasso {
+  transform: rotate(90deg) translateZ(.05px) scale(0.8) translateX(0%) translateY(10vh) ;
+}
+.acabou {
+  transform: rotate(90deg) translateZ(-.2px) scale(1.1) translateX(25vh) translateY(-8vh) ;
+}
+
+
+
+.tutorial, header {
+  position: absolute;
+  left: 1rem;
+}
+header {bottom: 1rem;}
+.tutorial {top: 1rem;}
+
+
+a {
+  color: inherit;
+  font-weight: 500;
+  
+}
+
+
+.gira a {
+  overflow: hidden;
+  display: block;
+  padding: 1vh ;
+  background: #F9C5BB;
+  box-shadow: 0 10px 50px #4F2F29;
+}
+img {
+  max-width: 45vh;
+  max-height: 50vh;
+  transition: .5s;
+  vertical-align: top;
+  filter: saturate(40%) sepia(30%) hue-rotate(5deg);
+}
+a:hover img {
+  filter: none;
+}
+p {
+  margin: 0;
+}
+.tutorial {
+  display: flex;
+  align-items: center;
+}
+.seta_pra_baixo_que_copiei_da_internet svg {
+    width: 50px;
+    fill: currentcolor;
+}
+
+
+
+
+
+
+.container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 1em;
+}
+
+h1 {
+  font-size: 120px;
+  text-transform: uppercase;
+  font-family: 'Gambetta', serif;
+  letter-spacing: -3px;
+  transition: 700ms ease;
+  font-variation-settings: "wght" 311;
+  margin-bottom: 0.8rem;
+  outline: none;
+  text-align: center;
+}
+
+h1:hover {
+  font-variation-settings: "wght" 582; 
+  letter-spacing: 1px;
+}
+
+p {
+  font-size: 1em;
+  line-height: 150%;
+  text-align: justify;
+  margin-right: 2.5em;
+  letter-spacing: .5px;
+}
+
+li {
+  font-size: 1em;
+  line-height: 150%;
+  text-align: justify;
+  margin-right: 2.5em;
+  letter-spacing: .5px;
+}
+
+#pheader {
+  font-weight: bold;
+  font-size: 1rem;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+.link {
+  transition: 700ms ease;
+  font-variation-settings: "wght" 311;
+}
+
+.link:hover {
+  font-variation-settings: "wght" 582; 
+  letter-spacing: 1px;
+  color: #F9C5BB;
+}
+
+#td {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center; 
+  filter: none;
+  padding: 1vh ;
+  background: #F9C5BB;
+  box-shadow: 0 10px 50px #4F2F29;
+  transition: 700ms ease;
+}
+
+#td:hover {
+  transform: scale(1.5);
+}
+
+#botaodamorte:
